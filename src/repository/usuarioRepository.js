@@ -42,21 +42,3 @@ export async function listarUsuariosPorEmail(email) {
 
     return linhas[0];
 };
-
-/*export async function listarUsuariosPorNome(nome) {
-
-    console.log("O nome que chegou no repository foi:", nome);
-    const command = `
-        SELECT  id,
-                nome, 
-                email
-        FROM usuarios
-        WHERE nome LIKE ?
-    `
-
-    const [linhas] = await con.query(command, [
-        `%${nome}%`
-    ]);
-
-    return linhas;
-}*/
